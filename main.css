@@ -1,13 +1,27 @@
 /* 
-범용 선택자(Universal Selector)
- *는 전체 */
+상속 제어하기 initial,inherit,unset
+  */
 
-/*1. 일반 형제 선택자 결합 -선택자 뒤쪽에 있으면서 형제이면 적용(~) */
+/*initial은 적용안되게 하는것 초기값으로(?) */
 
-* {
-    color: red;
+div {
+    border:1px solid silver;
+    margin:8px;
 }
 
-p + * {
-    color:green;
+.parent {
+    color:blue;
+    font-size:15px;
+}
+
+/*parent에만 blue적용되지 않고 자식에게도 상속됨(자기 스타일이 없으면/안되는것도 있음) */
+
+.child2 {
+    color:red;
+}
+
+.child1 {
+    color: initial;
+    font-size:initial;
+    all:initial;
 }
