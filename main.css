@@ -2,26 +2,27 @@
 상속 제어하기 initial,inherit,unset
   */
 
-/*initial은 적용안되게 하는것 초기값으로(?) */
+/*initial은 적용안되게 하는것 초기값으로(?)
+inherit은 무조건 상속*/
 
 div {
     border:1px solid silver;
-    margin:8px;
-}
-
-.parent {
-    color:blue;
-    font-size:15px;
-}
-
-/*parent에만 blue적용되지 않고 자식에게도 상속됨(자기 스타일이 없으면/안되는것도 있음) */
-
-.child2 {
-    color:red;
+    margin:2px;
 }
 
 .child1 {
-    color: initial;
-    font-size:initial;
-    all:initial;
+    color:red;
 }
+
+.parent1, .parent2 {
+    color:blue;
+}
+
+.parent2 .child1{
+    all:unset;
+}
+
+/*unset
+1. 부모로부터 상속받을 값이 있을때:inherit
+2. 부모로부터 상속받을 값이 없을 때:initial
+*/
