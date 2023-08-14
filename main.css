@@ -1,17 +1,20 @@
-/* Type Selector 로 특정 라인 설정하면 안되용~*/
-h2 {
-    color:purple;
-}
-/*ID selector*/
-#welcome-title {
+/*Pseudo-Clasws Selector
+(가상 클래스 선택자) */
+
+/*1.first-child*/
+li:first-child {
     color:green;
 }
-
-/* Class Selector */
-.blue {
-    color:blue;
+.movie:first-child {
+    font-size:40px;
 }
 
-.red {
-    color:red;
+/*2.last-child*/
+span:last-child {
+    color:tomato;
+}
+/*3.nth-child*/
+
+li:nth-child(3) {
+    color:hotpink;
 }
