@@ -1,20 +1,8 @@
 /*Pseudo-Clasws Selector
 (가상 클래스 선택자) 
+:not() 
+seloector:not(selector)형식*/
 
-first-child VS first of-type*
-cchild는 형제들 중 첫째, type은 타입중 첫째/
-
-/*1.: first-of-type */
-p:first-of-type {
-    color:red;
-}
-
-/*2.last-of-type */
-p:last-of-type {
-    color:blue;
-}
-
-/*3.nth-of-type() */
-div:nth-of-type(2) {
-    color:green;
+input:not([placeholder]){
+    background-color:indianred;
 }
