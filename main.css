@@ -1,21 +1,18 @@
-/*Pseudo-Elment Selector
-가상 요소 선택자
+/*Selector Combinations
+선택자 결합
+하위(스페이싱 사용), 자식, 형제 선택자,그룹화
+*/
 
-first-letter, first-line,selection*/
-.lorem::first-letter {
-    color:red;
-    font-size:30px;
-}
-.lorem::before {
-    content: 'Before';
-    /* before의 B에 적용됨 */ 
+ul li:last-of-type {
+    color:pink;
 }
 
-.lorem::first-line{
+#list > li:last-of-type {
     color:red;
 }
-.lorem::selection {
-    background-color:red;
-    color: white;
-    /*드래그한영역 선택영역에 적용*/
+/* 바로 아래 자식만*/
+
+#list li:last-of-type {
+    color:green;
 }
+/*list 아래 있는 자식들 모두*/
