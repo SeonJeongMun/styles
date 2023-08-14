@@ -1,18 +1,24 @@
 /*Selector Combinations
 선택자 결합
-하위(스페이싱 사용), 자식, 형제 선택자,그룹화
+하위(스페이싱 사용), 자식(>), 형제 선택자,그룹화
 */
 
-ul li:last-of-type {
-    color:pink;
-}
+/*1. 일반 형제 선택자 결합 -선택자 뒤쪽에 있으면서 형제이면 적용(~) */
 
-#list > li:last-of-type {
+code ~ p {
     color:red;
-}
-/* 바로 아래 자식만*/
-
-#list li:last-of-type {
+} 
+code ~ .red {
     color:green;
 }
-/*list 아래 있는 자식들 모두*/
+/*2. 인접 형제 선택자 결합 -선택자 뒤쪽에 있으면서 인접해야(+) */ 
+
+.red + div {
+    background-color: blue;
+}
+
+/*3. 그룹화 */
+
+p,span,code {
+    color:purple;
+}
