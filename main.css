@@ -1,8 +1,10 @@
 /*Pseudo-Clasws Selector
 (가상 클래스 선택자) 
-:not() 
-seloector:not(selector)형식*/
+link-방문한적 없는 애들만 색깔 적용,visited */
 
-input:not([placeholder]){
-    background-color:indianred;
+a:link {
+    color:tomato;
+}
+a:visited {
+    color:yellowgreen;
 }
