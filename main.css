@@ -1,0 +1,17 @@
+/* Type Selector 로 특정 라인 설정하면 안되용~*/
+h2 {
+    color:purple;
+}
+/*ID selector*/
+#welcome-title {
+    color:green;
+}
+
+/* Class Selector */
+.blue {
+    color:blue;
+}
+
+.red {
+    color:red;
+}
