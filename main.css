@@ -1,14 +1,21 @@
-/*Pseudo-Class Selector
--> selector:_____
-(가상 클래스 선택자)
+/*Pseudo-Elment Selector
+가상 요소 선택자
 
-Pseudo-Element Selector (가상 요소 선택자)
--> selector::_____ csslv3
--> selector:____
+first-letter, first-line,selection*/
+.lorem::first-letter {
+    color:red;
+    font-size:30px;
+}
+.lorem::before {
+    content: 'Before';
+    /* before의 B에 적용됨 */ 
+}
 
-before, after*/
-.favorite::before {
-    content: 'd';
-    /*드래그ㅜ 복사 등 안됨 그냥 스타일*/
-    color: indianred;
+.lorem::first-line{
+    color:red;
+}
+.lorem::selection {
+    background-color:red;
+    color: white;
+    /*드래그한영역 선택영역에 적용*/
 }
