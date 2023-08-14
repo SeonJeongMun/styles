@@ -1,24 +1,14 @@
-/*Pseudo-Clasws Selector
-(가상 클래스 선택자) 
+/*Pseudo-Class Selector
+-> selector:_____
+(가상 클래스 선택자)
 
-hover-마우스 올렸을떄, active-마우스 클릭시, 
-link visited hover active 순서로 작성
-focus 탭키로 특정요소가 포커싱 됐을때*/
+Pseudo-Element Selector (가상 요소 선택자)
+-> selector::_____ csslv3
+-> selector:____
 
-input[type=button] {
-    background-color:skyblue;
-    border:none;
+before, after*/
+.favorite::before {
+    content: 'd';
+    /*드래그ㅜ 복사 등 안됨 그냥 스타일*/
+    color: indianred;
 }
-input[type=button]:hover {
-    background-color:green;
-    color:white;
-}
-
-input[type=button]:active {
-    background-color:red;
-}
-input[type=text]:focus {
-    background-color:blue;
-    color:white;
-}
-/* input하고 텍스트입력하려고 클릭시에도 파란색으로 바뀜 */
