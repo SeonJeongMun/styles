@@ -1,29 +1,12 @@
 /* 
-우선순위
-1. 선언된 곳: 어떤걸 더 마지막에 읽는가
-2. 명시도 (적용범위가 적을수록 명시도 높음)
-3. 코드 위치
+폰트/텍스트 과련 속성
+font-size : % px...
+font-style : normal, oblique, italic (em은 강조고 얘들은 스타일)
+font-weight 굵기 normal(400), bold..
 */
 
-#box {
-    color:blue;
+.text {
+   font-size: 30px;
+   font-style: oblique;
+   font-weight: 100;
 }
-
-.class-box {
-    color:red;
-}
-
-div {
-    color:purple !important;
-}
-
-
-/* id가 더 명시도가 높아서 blue 적용!
-!important 다이김 -지양
-inline style>
-ID> 
-Class/Attribute/Pseudo Class>
-Type (tag) >
-* >
-inherited
-*/
